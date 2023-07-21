@@ -5,6 +5,7 @@
 :set softtabstop=4
 :set mouse=a
 :set smarttab
+autocmd FileType * set formatoptions-=cro
 
 call plug#begin()
 
@@ -31,6 +32,10 @@ let g:NERDTreeDirArrowCollapsible="~"
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-l> <C-w>l
+nnoremap <C-k> <C-w>k
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
 inoremap jj <Esc>
 
 nmap <F8> :TagbarToggle<CR>
